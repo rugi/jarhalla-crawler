@@ -1,6 +1,7 @@
 Crawler para jarhalla.
 Esta nueva version estará basada en SCALA.
 -------------------------------------------
+20/Enero/2012
 El diseño original del crawler implica la definición de fases de ejecución
 Fase 1. Localizar los paths a carpetas que contengan jars,
         No procesa los jars, solo localiza carpetas.
