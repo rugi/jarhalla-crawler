@@ -1,2 +1,21 @@
 Crawler para jarhalla.
 Esta nueva version estará basada en SCALA.
+-------------------------------------------
+El diseño original del crawler implica la definición de fases de ejecución
+Fase 1. Localizar los paths a carpetas que contengan jars,
+        No procesa los jars, solo localiza carpetas.
+        Esta fase genera como salida un archivo que contiene los paths dentro de un repositorio 
+        que contienen jar's
+Fase 2. Se toma como insumo el archivo de la fase 1, y se procesa linea por linea.
+        El objetivo de esta fase es, ahora sì, procesar los jars encontrados
+        Esto tambien da como resultado un archivo de salida.
+
+Fase 3. El archivo de datos de la fase anterior es traducido al modelo de almacenamiento 
+        deseado:
+                + Originalmente una base de datos relacional
+                + NonSql
+                +
+
+Esta estrategia es notoriamente originaria de entornos enterprise, es, IMHO una estrategia que evita retrabajos
+y establece puntos de reinicio, un poco anticuada, pero, efectiva.
+
