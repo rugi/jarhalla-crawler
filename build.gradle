@@ -3,6 +3,8 @@ apply plugin:'scala'
 task(runMain, dependsOn: 'build', type: JavaExec) {
 	main = 'org.xhubacubi.jarhalla.crawler.main.Main'
 	classpath = sourceSets.main.runtimeClasspath
+	args 'hi'
+	systemProperty 'simple.message', 'Hello '
 }
 
 repositories {
